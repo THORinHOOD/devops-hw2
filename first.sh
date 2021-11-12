@@ -20,9 +20,6 @@ do
     (-p | --path) path_to_download=$2;;
     (-h | --help) echo "$help"
         exit 0;;
-    (--) shift; break;;
-    (-*) echo "$0: error - unrecognized option $1" 1>&2; exit 1;;
-    (*)  break;;
     esac
     shift
 done
